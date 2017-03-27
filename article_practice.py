@@ -196,7 +196,7 @@ def c(guess, ans):
 
 guess = ""
 for i in xrange(len(q)):
-	guess = guess + " " + raw_input(str(i+1) + "/" + str(len(q)) + " " + q[i] + " : ")
+	guess = guess + " " + raw_input(str(i+1) + "/" + str(len(q)) + " " + q[i] + " : ").lower()
 
 raw_input("Press enter to continue.")
 
