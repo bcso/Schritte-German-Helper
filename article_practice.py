@@ -126,9 +126,28 @@ LWS_14_15 = ["die Arbeit",
 "der Meter",
 "der Platz",
 "der Computer",
-"das Heft",
-"die Hausaufgabe"]
+"das Heft"]
 
+others = ["die Dozentin",
+"die Vorlesung",
+"der Name",
+"das Papier",
+"der Buchstabe",
+"der Satz",
+"das Wort",
+"das Gespraech",
+"das Handy",
+"der Kochkurs",
+"der Rotwein",
+"die Traube",
+"das Geld",
+"die Melone",
+"die Tuete",
+"die Zeit",
+"das Problem",
+"das Buecherregal",
+"das Picknick"
+]
 
 print "Test me on..."
 print "1. Food part 1"
@@ -138,7 +157,9 @@ print "4. ALL FOOD"
 print "5. House part 1"
 print "6. House part 2"
 print "7. ALL HOUSE"
-print "8. ER'RY TING"
+print "8. 4 + 7"
+print "9. Others"
+print "10. 4 + 7 + 9"
 choice = raw_input("Enter choice number: ")
 
 if choice == "1":
@@ -157,6 +178,10 @@ elif choice == "7":
 	items = LWS_12_13 + LWS_14_15
 elif choice == "8":
 	items = LWS_8 + LWS_9 + LWS_10_11 + LWS_12_13 + LWS_14_15
+elif choice == "9":
+    	items = others
+elif choice == "10":
+    	items = LWS_8 + LWS_9 + LWS_10_11 + LWS_12_13 + LWS_14_15 + others
 else:
 	print "Input error, please input a number"
 	sys.exit()
