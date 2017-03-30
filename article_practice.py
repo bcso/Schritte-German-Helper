@@ -219,11 +219,16 @@ def c(guess, ans):
 
 	print str(len(ans)-len(corrections)) + " out of " + str(len(ans)) + " correct!"
 
-guess = ""
+allGuess = ""
 for i in xrange(len(q)):
-	guess = guess + " " + raw_input(str(i+1) + "/" + str(len(q)) + " " + q[i] + " : ").lower()
+	currGuess = raw_input(str(i+1) + "/" + str(len(q)) + " " + q[i] + " : ").lower()
+	allGuess = allGuess + " " + currGuess
+	if currGuess.strip() == a[i]: 
+		print "Correct!"
+	else:
+		print "Wrong! " + items[i]
 
 raw_input("Press enter to continue.")
 
-c(guess,a)
+c(allGuess,a)
 
